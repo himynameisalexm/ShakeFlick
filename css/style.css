@@ -1,0 +1,299 @@
+/*
+Developer Alex McMahon
+Final Assignment
+*/
+
+html,
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+#video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background: linear-gradient(to bottom right, #002f4b, #dc4225);
+}
+
+.movie-background {
+padding-top: 200px;
+     background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    height: 100%;
+  
+    
+}
+
+.movie-background p,
+.movie-background h2 {
+    padding:0px;
+    color: #fff;
+font-family: 'Francois One', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 35px;
+  
+}
+
+
+.movie-background h2
+{
+
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #5bec79;
+    font-weight: light;
+}
+
+
+.movie-image {
+    background: url("../images/movie-background.jpg") center no-repeat ;
+    position: relative;
+    height: 400px;
+
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 14px;
+    
+}
+
+.col-1 p {
+    text-align: left;
+}
+
+.mock {
+    opacity: 0;
+}
+
+.header {
+    position: relative;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    padding: 200px 100px;
+    text-align: center;
+    height: 100%;
+}
+
+.about {
+    position: relative;
+    height: 100%;
+    padding: 100px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    color: white;
+    margin: 0;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+    animation: fadeUpIn 2s;
+    -webkit-animation: fadeUpIn 2s;
+}
+
+@-webkit-keyframes fadeUpIn
+/* Safari and Chrome */
+
+{
+    from {
+        opacity: 0;
+        top: 150px;
+    }
+    to {
+        opacity: 1;
+        top: 70px;
+    }
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    font-size: 13px;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #5bec79;
+}
+
+nav {
+    z-index: 102;
+    position: absolute;
+    margin: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    color: #5bec79;
+}
+
+
+/* mouse scroll animation */
+
+#scrolldown {
+    bottom: 40px;
+    height: 50px;
+    margin-left: -50px;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    width: 100px;
+    z-index: 100;
+}
+
+#scrolldown p {
+    font: 'Avenir', sans-serif;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    color: #fff;
+}
+
+.mouse {
+    border: 2px solid #fff;
+    border-radius: 13px;
+    display: block;
+    height: 46px;
+    left: 50%;
+    margin: 10px 0 0 -13px;
+    position: absolute;
+    width: 26px;
+}
+
+.mouse span {
+    display: block;
+    font-size: 1.5em;
+    margin: 4px 7px;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+/* end mouse scroll */
+
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+}
+
+
+/* Clear fix hack */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+.col-1 {
+    float: left;
+    padding: 0 10px 10px 0;
+    width: 30%;
+}
+
+.col-2 {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+
+/* contact form */
+
+form {
+    text-align: center;
+    line-height: 50px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    border: 0px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #333;
+    height: 100px;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #5bec79;
+    margin: 0;
+    color: #5bec79;
+}
+
+.button:hover {
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #5bec79;
+}
+
+footer {
+    margin: 50px;
+    text-align: center;
+}
+
+footer p {
+    color: #333;
+}
