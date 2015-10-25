@@ -61,7 +61,7 @@ p {
 }
 
 .mock {
-    opacity: 0;
+    opacity: 50;
 }
 
 .header {
@@ -158,7 +158,7 @@ nav a {
     z-index: 100;
 }
 
-#scrolldown p {
+.arrow {
     font: 'Avenir', sans-serif;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -181,7 +181,7 @@ nav a {
 .mouse span {
     display: block;
     font-size: 1.5em;
-    margin: 4px 7px;
+    margin: 4px;
 }
 
 @keyframes scroll {
