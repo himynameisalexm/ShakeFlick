@@ -6,9 +6,9 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "you@yourdomain.com";
+    $email_to = "hello@alexmcmahon.com.au";
  
-    $email_subject = "Your email subject line";
+    $email_subject = "Alex, your app rules but...";
  
      
  
@@ -18,7 +18,7 @@ if(isset($_POST['email'])) {
  
         // your error code can go here
  
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "Oh o, there were error(s) found with the form you submitted. ";
  
         echo "These errors appear below.<br /><br />";
  

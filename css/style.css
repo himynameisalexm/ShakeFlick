@@ -21,48 +21,39 @@ body {
 }
 
 .movie-background {
-padding-top: 200px;
-     background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    padding-top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     height: 100%;
-  
-    
 }
 
 .movie-background p,
 .movie-background h2 {
-    padding:0px;
+    padding: 0px;
     color: #fff;
-font-family: 'Francois One', sans-serif;
+    font-family: 'Francois One', sans-serif;
     font-size: 40px;
     font-weight: 100;
     text-align: center;
     line-height: 35px;
-  
 }
 
-
-.movie-background h2
-{
-
+.movie-background h2 {
     font-size: 14px;
     text-transform: uppercase;
     color: #5bec79;
     font-weight: light;
 }
 
-
 .movie-image {
-    background: url("../images/movie-background.jpg") center no-repeat ;
+    background: url("../images/movie-background.jpg") center no-repeat;
     position: relative;
     height: 400px;
-
 }
 
 p {
     letter-spacing: 2px;
     line-height: 30px;
     font-size: 14px;
-    
 }
 
 .col-1 p {
@@ -203,7 +194,10 @@ nav a {
         transform: translateY(20px);
     }
 }
+
+
 /* end mouse scroll */
+
 
 /* Box Model Hack */
 
@@ -236,7 +230,7 @@ nav a {
 .col-1 {
     float: left;
     padding: 0 10px 10px 0;
-    width: 30%;
+    width: 300px;
 }
 
 .col-2 {
@@ -248,10 +242,11 @@ nav a {
 /* contact form */
 
 form {
-    text-align: center;
     line-height: 50px;
     width: 500px;
     margin: 0 auto;
+    padding: 10px 100px;
+    display: block;
 }
 
 input,
@@ -265,7 +260,6 @@ textarea {
 }
 
 textarea {
-    width: 100%;
     margin-top: 10px;
     border: 1px solid #333;
     height: 100px;
@@ -276,7 +270,8 @@ textarea {
     height: 50px;
     background-color: #fff;
     border: 1px solid #5bec79;
-    margin: 0;
+    padding: 10px;
+    margin-top: 20px;
     color: #5bec79;
 }
 
@@ -292,8 +287,30 @@ textarea {
 footer {
     margin: 50px;
     text-align: center;
+    display: block;
 }
 
 footer p {
     color: #333;
+}
+
+
+/* medium+ screen sizes */
+
+@media (min-width:992px) {
+    .desktop-only {
+        display: block !important;
+    }
+}
+
+
+/* small screen sizes */
+
+@media (max-width: 991px) {
+    .mobile-only {
+        display: block !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
 }
